@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 // Function Prototype
 void PrintMessage();
 
@@ -10,17 +12,17 @@ int main()
 	PrintMessage();
 
 	double x = 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1;
-	std::cout << x << std::endl;
+	cout << x << endl;
 
 	int y = 1;
 
 	if (y == x)
 	{
-		std::cout << "Equal\n";
+		cout << "Equal\n";
 	}
 	else
 	{
-		std::cout << "Not Equal\n";
+		cout << "Not Equal\n";
 	}
 
 	return 0;
@@ -29,9 +31,9 @@ int main()
 // Function Definition
 void PrintMessage()
 {
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
+	cout << "Hello world!\n";
+	cout << "Hello world!\n";
+	cout << "Hello world!\n";
+	cout << "Hello world!\n";
+	cout << "Hello world!\n";
 }
