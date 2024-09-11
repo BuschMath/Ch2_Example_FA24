@@ -1,37 +1,11 @@
 #include <iostream>
-
-// Function Prototype
-void PrintMessage();
+#include "Customer.h"
 
 int main()
 {
-	// Function call
-	PrintMessage();
-	PrintMessage();
+	Customer c1(1, "John Doe", "123 Main St", "doe@iccc.cc.ia.us", "555-1234", "");
 
-	double x = 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1;
-	std::cout << x << std::endl;
-
-	int y = 1;
-
-	if (y == x)
-	{
-		std::cout << "Equal\n";
-	}
-	else
-	{
-		std::cout << "Not Equal\n";
-	}
+	c1.display();
 
 	return 0;
-}
-
-// Function Definition
-void PrintMessage()
-{
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
-	std::cout << "Hello world!\n";
 }
