@@ -6,11 +6,14 @@
 class Customer
 {
 public:
+
+	// Constructors and Destructor
 	Customer();
 	Customer(int id_, std::string name_, std::string address_, std::string phone_, 
 		std::string email_, std::string birthdate_);
 	~Customer();
 
+	// Getters and Setters
 	int getId();
 	void setId(int id);
 
@@ -29,15 +32,17 @@ public:
 	std::string getBirthdate();
 	void setBirthdate(std::string birthdate);
 
+	// Display customer infomration method
 	void display();
 
 private:
-	int id;
-	std::string name;
-	std::string address;
-	std::string phone;
-	std::string email;
-	std::string birthdate;
+
+	int id;						// Customer ID
+	std::string name;			// Customer Name
+	std::string address;		// Customer Address
+	std::string phone;			// Customer Phone
+	std::string email;			// Customer Email
+	std::string birthdate;		// Customer Birthdate
 };
 
 #endif // !CUSTOMER_H
